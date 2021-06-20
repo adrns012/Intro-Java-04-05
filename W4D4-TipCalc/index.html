@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles/styles.css">
+        <title>Tip Calculator</title>
+    </head>
+    <body>
+        <h1>Tip Calculator</h1>
+        <p>Bill:</p>
+        <input placeholder="Amount due before tip" type="number" id="bill-amount" class="calc-input">
+        <p>Quality of Service:</p>
+        <select id="service-quality" class="tip-selector">
+            <option selected disabled hidden>Please select an option</option>
+            <option value=".05">5% - I've had enough...</option>
+            <option value=".10">10% - Absolutely gutted!</option>
+            <option value=".15">15% - Not bad</option>
+            <option value=".20">20% - May I have another?</option>
+            <option value=".30">30% - Hmmm... you're pretty good</option>
+        </select>
+        <p>Split Bill:</p>
+        <input placeholder="# of people splitting bill" type="number" id="split-parties" class="calc-input">
+        <span id="tip">Tip Due - </span>
+        <span id="total">Total Due - </span>
+        <script src="scripts/scripts.js"></script>
+        <button id="calculate">Calculate Tip</button>
+    </body>
+</html>

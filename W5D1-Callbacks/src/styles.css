@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(250, 128, 114, .2);
+    z-index: -15;
+}
+
+div.pics-container {
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-end;
+   border-color: rgba(39, 7, 184, 0.699);
+
+}
+
+.pics {
+    height: 50%;
+    width: 50%;
+    border-color: rgba(39, 7, 184, 0.699);
+}
+
+#pic {
+    border-color: rgba(39, 7, 184, 0.699);
+    border-width: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-style: oblique;
+    color: rgba(39, 7, 184, 0.699);
+
+}

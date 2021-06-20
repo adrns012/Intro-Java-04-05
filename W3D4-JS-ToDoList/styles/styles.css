@@ -1,0 +1,109 @@
+h2 {
+    margin: 0 auto;
+    color:rgb(194, 251, 38);
+    text-shadow: 4px 4px seagreen;
+}
+
+body {
+    margin: 10px auto;
+    min-width: 400px;
+    max-width: 50%;
+    background-color: rgb(251, 255, 0, .30);
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 18px 14px 14px 40px;
+    list-style-type: none;
+    background: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: 0.2s;
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  /* Set zebra-stripes: all odd list items to a different color */
+  ul li:nth-child(odd) {
+  background: rgb(255, 255, 255);
+  }
+  ul li:hover {
+    background: #ddd;
+  }
+  ul li.checked {
+    background: rgb(117, 228, 169);
+    color: rgb(255, 255, 255);
+    text-decoration: line-through;
+  }
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  .close {
+    color: rgb(194, 7, 169);
+    background-color: rgb(117, 228, 169);
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    padding: 19px 16px 18px 19px;
+  }
+  .close:hover {
+    font-weight: bold;
+    background-color: rgb(194, 251, 38);
+    color: rgb(194, 7, 169);
+  }
+  .header {
+    background-color: rgb(194, 7, 169);
+    padding: 40px 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size:  30px;
+  }
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  .addButton {
+    padding: 6px;
+    width: 7.5%;
+    background: rgb(117, 228, 169);
+    color: rgb(194, 7, 169);
+    float: left;
+    font-weight:  bold;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 0;
+  }
+  .addButton:hover {
+    color: rgb(194, 7, 169);
+    background-color: rgb(194, 251, 38);
+  }
+ 
